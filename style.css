@@ -117,6 +117,7 @@ section {
 .input-box input {
     width: 90%;
     padding: 13px;
+    outline: none;
     border: none;
     border-radius: 5px;
     margin-right: 13px;
@@ -130,9 +131,38 @@ section {
     background-color: hsl(180, 66%, 49%);
 }
 
-.line {
+.short-links{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 40px 40px;
+}
+.link-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    /* margin: 40px 40px; */
+    align-items: center;
+}
 
-    bottom: -280px;
+.short-links input{
+    overflow: scroll;
+    border: none;
+    width: 400px;
+    outline: none;
+}
+.short-part{
+    display: flex;
+    gap: 30px;
+}
+.short-part button{
+    padding: 5px;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 5px;
+}
+
+.line {
+    bottom: -390px;
     position: relative;
     width: 90%;
     margin-left: 30px;
@@ -146,7 +176,7 @@ section {
 
 .container {
     background-color: hsl(0, 0%, 75%);
-    height: 70vh;
+    height: 90vh;
 }
 
 .card-content {
@@ -170,6 +200,7 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    margin: -10px auto;
 }
 
 .card-3 {
@@ -235,7 +266,6 @@ section {
 .foot-logo img {
     margin-right: 80px;
     margin-bottom: 80px;
-    background-color: #fff;
 }
 
 .footer-menu {
