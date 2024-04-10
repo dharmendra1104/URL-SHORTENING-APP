@@ -6,11 +6,17 @@
 }
 
 header {
-    padding: 20px 80px 20px 80px;
+    padding: 20px 60px 20px 60px;
     width: 100%;
     font-weight: 600;
+    display: flex;
     color: gray;
     /* background-color: aqua; */
+}
+
+header img {
+    margin-top: 25px;
+    height: 40px;
 }
 
 .navbar {
@@ -18,7 +24,7 @@ header {
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 60px;
     padding: 10px 30px 30px 50px;
 }
@@ -31,6 +37,12 @@ header {
 
 .navbar ul li {
     margin-top: 10px;
+}
+
+.menu-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .login {
@@ -52,26 +64,20 @@ header {
     border: none;
 }
 
-section {
-    /* margin: 0px 30px 0px 30px;
-    padding: 0px 40px 0px 40px; */
-}
-
 .main {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Two equal columns */
-    grid-gap: 20px;
+    grid-gap: 12px;
 }
 
 .item {
-    padding: 20px;
-    /* border: 1px solid #ccc; */
+    padding: 10px;
 }
 
 .item img {
-    max-width: 100%;
+    max-width: 90%;
+    /* margin-left: 14px; */
 }
 
 .content {
@@ -97,11 +103,11 @@ section {
 }
 
 .url-content {
-    margin: 10px 80px;
+    margin: 0px 60px;
 }
 
 .input-box {
-    top: 60px;
+    top: 50px;
     position: relative;
     display: flex;
     align-items: center;
@@ -131,30 +137,40 @@ section {
     background-color: hsl(180, 66%, 49%);
 }
 
-.short-links{
-    background-color: #fff;
-    border-radius: 5px;
-    margin: 40px 40px;
+.short-links {
+    /* background-color: #fff; */
+    margin: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.link-container{
+
+.link-container {
+    border-radius: 5px;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
-    /* margin: 40px 40px; */
     align-items: center;
 }
 
-.short-links input{
+.link-container p {
+    color: #fff;
+}
+
+.short-links input {
     overflow: scroll;
     border: none;
     width: 400px;
     outline: none;
 }
-.short-part{
+
+.short-part {
     display: flex;
     gap: 30px;
 }
-.short-part button{
+
+.short-part button {
     padding: 5px;
     border: none;
     background-color: hsl(180, 66%, 49%);
@@ -162,27 +178,31 @@ section {
 }
 
 .line {
-    bottom: -390px;
+    bottom: 150px;
+    z-index: ;
     position: relative;
-    width: 90%;
-    margin-left: 30px;
+    width: 80%;
+    margin-left: 60px;
     height: 7px;
     background-color: hsl(180, 66%, 49%);
 }
 
-.card-1 {
-    grid-area: myArea;
-}
 
 .container {
     background-color: hsl(0, 0%, 75%);
-    height: 90vh;
+    height: 100%;
+    width: 100%;
 }
 
 .card-content {
-    display: grid;
-    grid-template-areas: 'myArea myArea myArea myArea';
-    grid-gap: 10px;
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 10px;
 }
 
@@ -195,12 +215,12 @@ section {
 
 .card {
     position: relative;
-    width: 95%;
+    width: 30%;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    margin: -10px auto;
+    margin: 70px 0px;
 }
 
 .card-3 {
@@ -212,14 +232,13 @@ section {
 }
 
 .top-content {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
     padding: 40px;
     text-align: center;
 }
 
 .icon img {
-    /* z-index: 1000; */
     position: relative;
     bottom: 33px;
     background-color: hsl(260, 8%, 14%);
@@ -277,4 +296,150 @@ section {
 .social-icon ul {
     display: flex;
     gap: 15px;
+}
+
+.menu {
+    display: none;
+    margin-left: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        font-size: 20px
+    }
+    .menu-bar {
+        border-radius: 10px;
+        display: ;
+        flex-direction: column;
+        background-color: #4d4d4d;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 30px;
+        left: 0;
+        padding: 20px;
+        margin: 70px 50px;
+        width: 78%;
+        height: 50%;
+        color: #fff;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .container {
+        padding-top: 60px;
+    }
+
+    .login {
+        padding-top: 20px;
+        width: 90%;
+        border-top: 1px solid white;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .login a {
+        color: #fff;
+    }
+
+    .login button {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .main {
+        grid-template-columns: 1fr;
+        padding-bottom: 0px;
+    }
+
+    .item.content {
+        order: 1;
+    }
+
+    .item img {
+        max-width: 70%;
+        margin-left: 54px;
+    }
+
+    .content {
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-container {
+        gap: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .short-part {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-top: 10px;
+        border-top: 1px solid gray;
+    }
+
+    .link-container input {
+        width: 100%;
+    }
+
+    .card-content {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20%;
+    }
+
+    .card {
+        margin: 10px 20px;
+        width: 80%;
+    }
+
+    .line {
+        transform: rotate(90deg);
+        width: 500px;
+        right: 7rem;
+        bottom: 420px;
+        margin: 0px 68px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .foot-logo img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .social-icon {
+        margin: 20px;
+    }
+
+    .hide {
+        display: none;
+    }
 }

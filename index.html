@@ -6,21 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>URL shortening API Challenge</title>
 </head>
 
 <body>
   <header>
+    <img src="/images/logo.svg" alt="#">
     <nav class="navbar">
-      <ul class="icons">
-        <img src="/images/logo.svg" alt="#">
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Resources</li>
-      </ul>
-      <div class="login">
-        <a href="#">Login</a>
-        <button class="sign-btn">sign Up</button>
+      <div class="menu-bar hide">
+        <ul class="icons">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+        </ul>
+        <div class="login">
+          <a href="#">Login</a>
+          <button class="sign-btn">sign Up</button>
+        </div>
+      </div>
+      <div class="menu">
+        <span id="menu"><i class="fa-solid fa-bars"></i></span>
       </div>
     </nav>
   </header>
@@ -43,23 +51,21 @@
       </div>
     </div>
     <div class="container">
-      <div class="line"></div>
+      <div class="short-links">
+        <!-- <div class="link-container">
+          <input class="unshorted-url" type="text">
+          <span class="short-part">
+            <a class="shorted-url" href=""></a>
+            <button class="copy-button">Copy</button>
+          </span>
+        </div> -->
+      </div>
+      <div class="top-content">
+        <h2>Advanced Statistics</h2>
+        <p>Track how your links are perfoming across the web with our Advanced Statistics dashboard.</p>
+      </div>
+
       <div class="card-content">
-        <div class="card-1">
-          <div class="short-links">
-            <!-- <div class="link-container">
-              <input class="unshorted-url" type="text">
-              <span class="short-part">
-                <a class="shorted-url" href=""></a>
-                <button class="copy-button">Copy</button>
-              </span>
-            </div> -->
-          </div>
-          <div class="top-content">
-            <h2>Advanced Statistics</h2>
-            <p>Track how your links are perfoming across the web with our Advanced Statistics dashboard.</p>
-          </div>
-        </div>
         <div class="card card-2">
           <div class="icon">
             <img src="images/icon-brand-recognition.svg" alt="#">
@@ -88,6 +94,7 @@
             links, supercharging audience engagement.</p>
         </div>
       </div>
+      <div class="line"></div>
     </div>
     <div class="link-today">
       <h1>
