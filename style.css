@@ -35,6 +35,16 @@ header img {
     gap: 40px;
 }
 
+.navbar ul li:hover{
+    color: black;
+    cursor: pointer;
+}
+
+body button:hover{
+    background-color:hsla(180, 66%, 49%, 0.678);
+    transition:background-color 0.3s ease;
+    cursor: pointer;
+}
 .navbar ul li {
     margin-top: 10px;
 }
@@ -110,8 +120,9 @@ header img {
     top: 50px;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     border-radius: 5px;
     padding: 30px;
     background-color: #4d4d4d;
@@ -120,8 +131,15 @@ header img {
     gap: 10px;
 }
 
+.input1{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 .input-box input {
-    width: 90%;
+    height: 40px;
+    width: 89%;
     padding: 13px;
     outline: none;
     border: none;
@@ -129,11 +147,13 @@ header img {
     margin-right: 13px;
 }
 
-.input-box button {
+.input1 button {
+    height: 40px;
     width: 100px;
     padding: 14px 12px;
     border: none;
     border-radius: 5px;
+    color: #fff;
     background-color: hsl(180, 66%, 49%);
 }
 
@@ -154,8 +174,12 @@ header img {
     align-items: center;
 }
 
-.link-container p {
+/* .error {
     color: #fff;
+} */
+.link-container a{
+    text-decoration: none;
+    color: hsl(180, 66%, 49%);
 }
 
 .short-links input {
@@ -189,7 +213,7 @@ header img {
 
 
 .container {
-    background-color: hsl(0, 0%, 75%);
+    background-color:  hsl(0, 0%, 75%);
     height: 100%;
     width: 100%;
 }
@@ -304,9 +328,17 @@ header img {
 }
 
 
+.footer ul li:hover{
+    color:hsl(180, 66%, 49%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
-
+    
     .navbar {
         font-size: 20px
     }
