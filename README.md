@@ -28,7 +28,9 @@ The project is deployed and accessible at [](#).
 
 ## Screenshots
 
+- Desktop Design view
 ![Desktop Design](./design/desktop-preview.jpg)
+- Mobile Design view
 ![Mobile Design](./design/mobile-active-states.jpg)
 
 ## Setup Instructions
