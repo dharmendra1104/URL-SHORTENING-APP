@@ -1,7 +1,5 @@
 # Shortly URL shortening API Challenge
 
-(./design/desktop-preview.jpg)
-
 ## Welcome! 👋
 
 This project was completed as a challenge from Frontend Mentor. The goal was to build a landing page that integrates with the Clean URI API to shorten URLs and achieve a design close to the provided designs.
@@ -30,7 +28,7 @@ The project is deployed and accessible at [](#).
 
 ## Screenshots
 
-![Desktop Design]((./design/desktop-preview.jpg))
+![Desktop Design](./design/desktop-preview.jpg)
 ![Mobile Design](./design/mobile-active-states.jpg)
 
 ## Setup Instructions
